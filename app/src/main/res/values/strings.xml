@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Divine Limousine</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_reservation">My Reservations</string>
+    <string name="title_activity_reserve_car">Reservation Info</string>
+    <string name="run_type_prompt">Type of Run</string>
+    <string-array name="type_of_run">
+        <item>Select One</item>
+        <item>Birthday</item>
+        <item>Quincenera</item>
+        <item>Wedding</item>
+        <item>Anniversary</item>
+        <item>Bachelor/et</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_preferences">PreferencesActivity</string>
+</resources>
