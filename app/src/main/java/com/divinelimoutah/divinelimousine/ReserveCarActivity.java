@@ -1,5 +1,6 @@
 package com.divinelimoutah.divinelimousine;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 public class ReserveCarActivity extends ActionBarActivity {
@@ -18,6 +20,9 @@ public class ReserveCarActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserve_car);
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "LSANS.TTF");
+        TextView myTextview = (TextView) findViewById(R.id.DateLbl);
+        myTextview.setTypeface(myTypeface);
 
         timePicker = (TimePicker) findViewById(R.id.timePicker);
 
