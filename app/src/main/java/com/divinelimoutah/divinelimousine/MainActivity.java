@@ -1,8 +1,8 @@
 /*
 what to do next:
 access data from the database.
-create a login page.
-check the username and password and see if they are correct.
+-----------------create a login page.
+-----------------check the username and password and see if they are correct.
 create a main activity that shows that they are logged in, and one if they are not.
 create the fleet page.
 make the fleet button do something.
@@ -27,7 +27,6 @@ public class MainActivity extends ActionBarActivity {
 
     public Customer customer = new Customer("Bob", "Joe", "8015461234", "8014567894", null, null, null, 0, null, "someone@gmail.com", "password");// created a fake customer to try it
     // eventually we need to pull from the database to get the customers.
-    // we also need to change so their are not as many pointless fragments as there are.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +51,11 @@ public class MainActivity extends ActionBarActivity {
 
     public void reserve(View view){
         Intent intent = new Intent(this, ReserveCarActivity.class);
+        startActivity(intent);
+    }
+
+    public void login(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
