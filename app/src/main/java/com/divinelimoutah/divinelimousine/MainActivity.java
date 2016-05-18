@@ -1,3 +1,16 @@
+/*
+what to do next:
+access data from the database.
+create a login page.
+check the username and password and see if they are correct.
+create a main activity that shows that they are logged in, and one if they are not.
+create the fleet page.
+make the fleet button do something.
+check if there is some way to do a calendar easily.
+create the calendar page.
+make the calendar button do something.
+ */
+
 package com.divinelimoutah.divinelimousine;
 
 import android.content.Intent;
@@ -7,15 +20,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+/**
+ *
+ */
 public class MainActivity extends ActionBarActivity {
 
-    public Customer customer = new Customer("Bob", "Joe", "8015461234", "8014567894", null, null, null, 0, null, "ikingst7@gmail.com", "password");
+    public Customer customer = new Customer("Bob", "Joe", "8015461234", "8014567894", null, null, null, 0, null, "someone@gmail.com", "password");// created a fake customer to try it
+    // eventually we need to pull from the database to get the customers.
+    // we also need to change so their are not as many pointless fragments as there are.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        getActionBar().hide();
+//        getActionBar().hide(); // this hides the action bar in the main activity
+        //caveat: this will not work if the api is higher than 19
     }
 
     @Override
@@ -27,6 +46,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void reservation(View view){
         Intent intent = new Intent(this, ReservationActivity.class);
+        intent.putExtra("carReservations", customer.getReservations());
         startActivity(intent);
     }
 

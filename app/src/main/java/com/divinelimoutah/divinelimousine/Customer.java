@@ -1,12 +1,15 @@
 package com.divinelimoutah.divinelimousine;
 
 
+import java.util.ArrayList;
+
+
 public class Customer {
 
     private String firstName;
     private String lastName;
-    private int mainPhone;
-    private int altPhone;
+    private String mainPhone;
+    private String altPhone;
     private String street;
     private String city;
     private String state;
@@ -14,10 +17,12 @@ public class Customer {
     private boolean active = true;
     private String billTo;
     private String email;
+    private String password;
+    private ArrayList<Reservation> reservations;
 
-    public Customer(String firstName, String lastName, int mainPhone,
-                    int altPhone, String street, String city, String state,
-                    int zip, String billTo, String email) {
+    public Customer(String firstName, String lastName, String mainPhone,
+                    String altPhone, String street, String city, String state,
+                    int zip, String billTo, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.mainPhone = mainPhone;
@@ -28,6 +33,7 @@ public class Customer {
         this.city = city;
         this.state = state;
         this.zip = zip;
+        this.password = password;
 
     }
 
@@ -47,19 +53,19 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public int getMainPhone() {
+    public String getMainPhone() {
         return mainPhone;
     }
 
-    public void setMainPhone(int mainPhone) {
+    public void setMainPhone(String mainPhone) {
         this.mainPhone = mainPhone;
     }
 
-    public int getAltPhone() {
+    public String getAltPhone() {
         return altPhone;
     }
 
-    public void setAltPhone(int altPhone) {
+    public void setAltPhone(String altPhone) {
         this.altPhone = altPhone;
     }
 
@@ -115,6 +121,25 @@ public class Customer {
         this.zip = zip;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String pass) {
+        this.password = pass;
+    }
+
+    public ArrayList<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void addReservation(Reservation r) {
+        this.reservations.add(r);
+    }
+
+    public void setReservations(ArrayList<Reservation> r) {
+        this.reservations = r;
+    }
 
 
 }

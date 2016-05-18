@@ -4,17 +4,23 @@ import android.media.Image;
 
 public enum Vehicle {
 
-    CHARGER(10, null),
-    ESCALADE(14, null),
-    CHRYSLER(10, null),
-    HUMMER(20, null);
+    CHARGER("Charger", 10, null),
+    ESCALADE("Escalade", 14, null),
+    CHRYSLER("Chrysler", 10, null),
+    HUMMER("Hummer", 20, null);
 
     private Image icon;
+    private String name;
     private int seats;
 
-    private Vehicle(int seats, Image icon) {
+    private Vehicle(String name, int seats, Image icon) {
+        this.name = name;
         this.icon = icon;
         this.seats = seats;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public Image getIcon() {
