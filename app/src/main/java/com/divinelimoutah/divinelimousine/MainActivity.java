@@ -14,24 +14,43 @@ make the calendar button do something.
 package com.divinelimoutah.divinelimousine;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 /**
  *
  */
 public class MainActivity extends ActionBarActivity {
 
-    public Customer customer = new Customer("Bob", "Joe", "8015461234", "8014567894", null, null, null, 0, null, "someone@gmail.com", "password");// created a fake customer to try it
+//    public Customer customer = new Customer("Bob", "Joe", "8015461234", "8014567894", null, null, null, 0, null, "someone@gmail.com", "password");// created a fake customer to try it
     // eventually we need to pull from the database to get the customers.
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView tx = (TextView)findViewById(R.id.textView);
+
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "LSANSI.TTF");
+
+        tx.setTypeface(custom_font);
+
+//        AssetManager am = context.getApplicationContext().getAssets();
+//
+//        typeface = Typeface.createFromAsset(am,
+//                String.format(Locale.US, "fonts/%s", "abc.ttf"));
+//
+//        setTypeface(typeface);
 //        getActionBar().hide(); // this hides the action bar in the main activity
         //caveat: this will not work if the api is higher than 19
     }
@@ -43,11 +62,11 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    public void reservation(View view){
-        Intent intent = new Intent(this, ReservationActivity.class);
-        intent.putExtra("carReservations", customer.getReservations());
-        startActivity(intent);
-    }
+//    public void reservation(View view){
+//        Intent intent = new Intent(this, ReservationActivity.class);
+//        intent.putExtra("carReservations", customer.getReservations());
+//        startActivity(intent);
+//    }
 
     public void reserve(View view){
         Intent intent = new Intent(this, ReserveCarActivity.class);
