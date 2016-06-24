@@ -34,16 +34,23 @@ public class MainActivity extends ActionBarActivity {
     // eventually we need to pull from the database to get the customers.
 
 
+    private boolean loggedIn = true;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        TextView tx = (TextView)findViewById(R.id.textView);
+        if(loggedIn )
+            setContentView(R.layout.activity_main);
+        else
+            setContentView(R.layout.activity_reservation);
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "LSANSI.TTF");
+//        TextView tx = (TextView)findViewById(R.id.textView);
 
-        tx.setTypeface(custom_font);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "LSANS.TTF");
+
+//        tx.setTypeface(custom_font);
 
 //        AssetManager am = context.getApplicationContext().getAssets();
 //
@@ -51,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
 //                String.format(Locale.US, "fonts/%s", "abc.ttf"));
 //
 //        setTypeface(typeface);
-//        getActionBar().hide(); // this hides the action bar in the main activity
+        getActionBar().hide(); // this hides the action bar in the main activity
         //caveat: this will not work if the api is higher than 19
     }
 
