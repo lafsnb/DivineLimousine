@@ -2,41 +2,27 @@ package com.divinelimoutah.divinelimousine;
 
 import android.media.Image;
 
-public enum Vehicle {
-
-    CHARGER("Charger", 10, null),
-    ESCALADE("Escalade", 14, null),
-    CHRYSLER("Chrysler", 10, null),
-    HUMMER("Hummer", 20, null);
+public abstract class Vehicle {
 
     private Image icon;
     private String name;
     private int seats;
 
-    private Vehicle(String name, int seats, Image icon) {
-        this.name = name;
-        this.icon = icon;
-        this.seats = seats;
-    }
+//    public Vehicles(String name, int seats, Image icon) (
+//        this.name = name;
+//        this.seats = seats;
+//        this.icon = icon;
+//    )
 
-    public String getName() {
-        return this.name;
-    }
+    public abstract String getName();
 
-    public Image getIcon() {
-        return icon;
-    }
+    public abstract Image getIcon();
 
-    public void setIcon(Image icon) {
-        this.icon = icon;
-    }
+    public abstract void setIcon(Image icon);
 
-    public int getSeats() {
-        return seats;
-    }
+    public abstract int getSeats();
 
-    public void setSeats(int seats) {
-        this.seats = seats;
-    }
+    public abstract void setSeats(int seats);
+
 
 }

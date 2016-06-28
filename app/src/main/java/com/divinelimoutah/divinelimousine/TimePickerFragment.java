@@ -5,6 +5,7 @@ import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.text.format.DateFormat;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -18,7 +19,8 @@ public class TimePickerFragment extends DialogFragment
         implements TimePickerDialog.OnTimeSetListener {
 
     private int btn;
-    private EditText txtView;
+    private String time;
+//    private TextView txtView;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -37,14 +39,16 @@ public class TimePickerFragment extends DialogFragment
         view.setCurrentMinute(minute);
 
         if(btn == 1) {
-            txtView = (EditText) getActivity().findViewById(R.id.pickUpText);
-            txtView.setText(getTime(hourOfDay, minute));
+            time = "Start Of Reservation: " + getTime(hourOfDay, minute);
+//            txtView = getActivity().findViewById(R.id.pickUpText);
+//            txtView.setText(getTime(hourOfDay, minute));
+        }
+        else if(btn == 2) {
+            time = "End Of Reservation: " + getTime(hourOfDay, minute);
         }
         else {
-            txtView = (EditText) getActivity().findViewById(R.id.dropOffText);
-            txtView.setText(getTime(hourOfDay, minute));
+            time = "Time Of First Pick Up: " + getTime(hourOfDay, minute);
         }
-
 
 
     }
@@ -59,4 +63,6 @@ public class TimePickerFragment extends DialogFragment
     public void setButton(int b) {
         this.btn = b;
     }
+
+    public String getTime() { return this.time; }
 }

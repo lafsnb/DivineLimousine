@@ -25,23 +25,204 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center">
 
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/spacer1"
-                    android:src="@drawable/white_spacer" />
 
-                <TextView
-                    android:id="@+id/myImageViewText"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/spacer1"
-                    android:layout_alignTop="@+id/spacer1"
-                    android:layout_alignBottom="@+id/spacer1"
-                    android:textSize="50sp"
-                    android:gravity="center"
-                    android:text="Hello"
-                    android:textColor="#ffffff" />
+                    android:onClick="showDatePickerDialog">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/setDatePicker"
+                        android:src="@drawable/white_spacer"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/dateLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/setDatePicker"
+                        android:layout_alignTop="@+id/setDatePicker"
+                        android:layout_alignBottom="@+id/setDatePicker"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Reservation Date: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="showStartTimePickerDialog">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/white_spacer" />
+
+                    <TextView
+                        android:id="@+id/reservationStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_alignTop="@+id/imageView2"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Start Of Reservation: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="showEndTimePickerDialog">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/white_spacer" />
+
+                    <TextView
+                        android:id="@+id/reservationEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView3"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_alignBottom="@+id/imageView3"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="End Of Reservation: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="showPickUpTimePickerDialog">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/white_spacer" />
+
+                    <TextView
+                        android:id="@+id/firstPickUpTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView5"
+                        android:layout_alignTop="@+id/imageView5"
+                        android:layout_alignBottom="@+id/imageView5"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Time Of First Pick Up: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="openKeyboard">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/white_spacer" />
+
+                    <TextView
+                        android:id="@+id/pickUpText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView4"
+                        android:layout_alignTop="@+id/imageView4"
+                        android:layout_alignBottom="@+id/imageView4"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Pick Up Address: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="newAddress">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="add another address"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/newAddress"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/plus_sign" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="openKeyboard">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/white_spacer" />
+
+                    <TextView
+                        android:id="@+id/dropOffText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView6"
+                        android:layout_alignTop="@+id/imageView6"
+                        android:layout_alignBottom="@+id/imageView6"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="Drop Off Address: "
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/continueButton"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/blue_button"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:layout_centerInParent="true"
+                        android:text="Continue"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+
             </LinearLayout>
 
 
