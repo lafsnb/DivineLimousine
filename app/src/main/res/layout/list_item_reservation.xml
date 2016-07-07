@@ -4,22 +4,34 @@
     android:layout_height="match_parent"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:id="@+id/list_item_reservation_textview"
-    android:gravity="left|center_vertical"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/car_image_view"/>
+        android:id="@+id/vehicleImage"
+        android:src="@drawable/limo1" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/vehicle_text_view"/>
+        android:weightSum="2">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/date_text_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date"
+            android:id="@+id/textView3"
+            android:layout_weight="1"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time"
+            android:id="@+id/textView4"
+            android:layout_weight="1"/>
+    </LinearLayout>
 </LinearLayout>

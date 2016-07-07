@@ -32,7 +32,13 @@
             android:label="@string/title_activity_preferences" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Fleet"
+            android:label="@string/title_activity_fleet" />
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/title_activity_create_account"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ public abstract class Vehicle {
     private String name;
     private int seats;
 
-//    public Vehicles(String name, int seats, Image icon) (
+//    public Vehicle(String name, int seats, Image icon) (
 //        this.name = name;
 //        this.seats = seats;
 //        this.icon = icon;
@@ -22,7 +22,7 @@ public abstract class Vehicle {
 
     public abstract int getSeats();
 
-    public abstract void setSeats(int seats);
+//    public abstract void setSeats(int seats);
 
 
 }
