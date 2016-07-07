@@ -62,6 +62,7 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
+            android:onClick="preferences"
             android:src="@drawable/calendar_button"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp" />

@@ -80,6 +80,12 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void preferences(View view){
+        Intent intent = new Intent(this, PreferencesActivity.class);
+        startActivity(intent);
+    }
+
+
     public void login(View view){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);

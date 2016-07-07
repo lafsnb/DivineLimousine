@@ -34,37 +34,20 @@
                 android:layout_marginBottom="12dp"
                 android:layout_marginTop="25dp" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView8"
-                android:src="@drawable/white_spacer"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="25dp"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentStart="false" />
-
-                <TextView
-                    android:id="@+id/notdatelbl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/imageView8"
-                    android:layout_alignTop="@+id/imageView8"
-                    android:layout_alignBottom="@+id/imageView8"
-                    android:layout_marginBottom="25dp"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:text="click here"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true" />
-
-            </RelativeLayout>
+                android:id="@+id/username"
+                android:singleLine="true"
+                android:hint="george"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,35 +62,20 @@
 
 
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView9"
-                android:src="@drawable/white_spacer"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="25dp" />
-
-                <TextView
-                    android:id="@+id/dateLbl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/imageView9"
-                    android:layout_alignTop="@+id/imageView9"
-                    android:layout_alignBottom="@+id/imageView9"
-                    android:layout_marginBottom="25dp"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:text="click here"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true" />
-
-            </RelativeLayout>
+                android:id="@+id/password"
+                android:singleLine="true"
+                android:hint="george"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

@@ -34,37 +34,52 @@
                 android:layout_marginBottom="12dp"
                 android:layout_marginTop="25dp" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView8"
-                    android:src="@drawable/white_spacer"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_alignParentEnd="false"
-                    android:layout_alignParentStart="false" />
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/imageView8"-->
+                    <!--android:src="@drawable/white_spacer"-->
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:layout_alignParentEnd="false"-->
+                    <!--android:layout_alignParentStart="false" />-->
 
-                <TextView
-                    android:id="@+id/notdatelbl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/imageView8"
-                    android:layout_alignTop="@+id/imageView8"
-                    android:layout_alignBottom="@+id/imageView8"
-                    android:layout_marginBottom="25dp"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:text="click here"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true" />
+                <!--<TextView-->
+                    <!--android:id="@+id/notdatelbl"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignLeft="@+id/imageView8"-->
+                    <!--android:layout_alignTop="@+id/imageView8"-->
+                    <!--android:layout_alignBottom="@+id/imageView8"-->
+                    <!--android:layout_marginBottom="25dp"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="click here"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
 
-            </RelativeLayout>
+            <!--</RelativeLayout>-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reservationName"
+                android:singleLine="true"
+                android:hint="george"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,35 +94,20 @@
 
 
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView9"
-                    android:src="@drawable/white_spacer"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="25dp" />
-
-                <TextView
-                    android:id="@+id/dateLbl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/imageView9"
-                    android:layout_alignTop="@+id/imageView9"
-                    android:layout_alignBottom="@+id/imageView9"
-                    android:layout_marginBottom="25dp"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:text="click here"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true" />
-
-            </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/primaryContact"
+                android:singleLine="true"
+                android:hint="pumpkin"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
 
 
             <TextView
@@ -121,40 +121,26 @@
                 android:layout_marginTop="17dp"
                 android:layout_marginBottom="12dp" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageVi"
-                    android:src="@drawable/white_spacer"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="40dp"
-                    android:layout_marginTop="25dp" />
-
-                <TextView
-                    android:id="@+id/date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/imageVi"
-                    android:layout_alignTop="@+id/imageVi"
-                    android:layout_alignBottom="@+id/imageVi"
-                    android:layout_marginBottom="25dp"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:text="click here"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true" />
-
-            </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/secondaryContact"
+                android:singleLine="true"
+                android:hint="george"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
 
                 <TextView
@@ -162,18 +148,80 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="DO YOU PREFER: "
-                    android:id="@+id/textView7"
-                    android:textColor="#FFFFFF" />
+                    android:id="@+id/prefer"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="3dp"/>
 
-                <ImageView
+                <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView2" />
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageView3" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALL"
+                        android:id="@+id/callRadioButton"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="15dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEXT"
+                        android:id="@+id/textRadioButton"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="15dp" />
+
+                </RadioGroup>
+
+                <!--<CheckBox-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="CALL"-->
+                    <!--android:id="@+id/callCheckBox"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:layout_marginLeft="25dp" />-->
+
+                <!--<CheckBox-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="TEXT"-->
+                    <!--android:id="@+id/textCheckBox"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:layout_marginLeft="25dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:id="@+id/callSquare"-->
+                    <!--android:src="@drawable/square"-->
+                    <!--android:layout_marginLeft="25dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="CALL "-->
+                    <!--android:id="@+id/call"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:layout_marginTop="3dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:id="@+id/textSquare"-->
+                    <!--android:src="@drawable/square"-->
+                    <!--android:layout_marginLeft="25dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="TEXT "-->
+                    <!--android:id="@+id/text"-->
+                    <!--android:textColor="#FFFFFF"-->
+                    <!--android:layout_marginTop="3dp"/>-->
             </LinearLayout>
 
             <RelativeLayout

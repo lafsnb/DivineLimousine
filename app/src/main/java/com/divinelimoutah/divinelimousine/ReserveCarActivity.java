@@ -25,15 +25,15 @@ public class ReserveCarActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserve_car);
-        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "LSANS.TTF");
-        TextView dateTextView = (TextView) findViewById(R.id.dateLbl);
-        reservationStartTextView = (TextView) findViewById(R.id.reservationStart);
-        reservationEndTextView = (TextView) findViewById(R.id.reservationEnd);
-        pickUpTimeTextView = (TextView) findViewById(R.id.firstPickUpTime);
-
-        dateTextView.setTypeface(myTypeface);
-
-        timePicker = (TimePicker) findViewById(R.id.timePicker);
+//        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "LSANS.TTF");
+//        TextView dateTextView = (TextView) findViewById(R.id.dateLbl);
+//        reservationStartTextView = (TextView) findViewById(R.id.reservationStart);
+//        reservationEndTextView = (TextView) findViewById(R.id.reservationEnd);
+//        pickUpTimeTextView = (TextView) findViewById(R.id.firstPickUpTime);
+//
+//        dateTextView.setTypeface(myTypeface);
+//
+//        timePicker = (TimePicker) findViewById(R.id.timePicker);
 
     }
 
