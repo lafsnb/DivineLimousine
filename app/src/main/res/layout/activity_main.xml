@@ -19,18 +19,47 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:src="@drawable/reserve_button_temp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:onClick="reserve"
+        android:layout_marginTop="50dp"
         android:layout_above="@+id/linearLayout"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp" />
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/continueButton"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blue_button"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:onClick="createAccount"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:layout_centerInParent="true"
+            android:text="RESERVE A LIMOUSINE"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageButton"-->
+        <!--android:src="@drawable/reserve_button_temp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:onClick="reserve"-->
+        <!--android:layout_above="@+id/linearLayout"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp" />-->
 
     <LinearLayout
         android:orientation="horizontal"
