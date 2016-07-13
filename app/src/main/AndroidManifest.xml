@@ -31,6 +31,7 @@
             android:name=".PreferencesActivity"
             android:label="@string/title_activity_preferences" />
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
@@ -38,7 +39,7 @@
             android:label="@string/title_activity_fleet" />
         <activity
             android:name=".CreateAccount"
-            android:label="@string/title_activity_create_account"></activity>
+            android:label="@string/title_activity_create_account" />
     </application>
 
 </manifest>

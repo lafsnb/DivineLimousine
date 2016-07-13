@@ -39,7 +39,7 @@
             android:onClick="createAccount"/>
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/reserveTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="26sp"
@@ -47,19 +47,6 @@
             android:text="RESERVE A LIMOUSINE"
             android:textColor="#ffffff" />
     </RelativeLayout>
-
-    <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/imageButton"-->
-        <!--android:src="@drawable/reserve_button_temp"-->
-        <!--android:adjustViewBounds="true"-->
-        <!--android:scaleType="fitCenter"-->
-        <!--android:onClick="reserve"-->
-        <!--android:layout_above="@+id/linearLayout"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_marginLeft="15dp"-->
-        <!--android:layout_marginRight="15dp" />-->
 
     <LinearLayout
         android:orientation="horizontal"
@@ -71,30 +58,96 @@
         android:id="@+id/linearLayout"
         android:gravity="bottom">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="52dp"
-            android:id="@+id/viewFleet"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/viewfleetbutton"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:baselineAlignBottom="false" />
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:id="@+id/viewFleet"-->
+            <!--android:layout_weight="1"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@drawable/viewfleetbutton"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:baselineAlignBottom="false" />-->
 
-        <ImageView
-            android:layout_width="310dp"
-            android:layout_height="52dp"
-            android:id="@+id/calendar"
+        <!--<ImageView-->
+            <!--android:layout_width="310dp"-->
+            <!--android:layout_height="52dp"-->
+            <!--android:id="@+id/calendar"-->
+            <!--android:layout_weight="1"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:onClick="preferences"-->
+            <!--android:src="@drawable/calendar_button"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp" />-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="viewFleet"
+            android:weightSum="2"
             android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:onClick="preferences"
-            android:src="@drawable/calendar_button"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/view_fleet_car"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="View Fleet"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:id="@+id/viewFleetTextView"
+                android:layout_weight="1"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="calendar"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/calendar"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Calendar"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:id="@+id/calendarTextView"
+                android:layout_weight="1"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -114,9 +167,11 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_marginLeft="20dp"
-            android:id="@+id/textView"
+            android:id="@+id/loginTextView"
             android:textColor="#ffffff"
-            android:onClick="login"/>
+            android:maxLines="1"
+            android:onClick="login"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,9 +183,10 @@
             android:textAlignment="gravity"
             android:gravity="right"
             android:layout_marginRight="20dp"
-            android:id="@+id/textView2"
+            android:id="@+id/createAccountTextView"
             android:textColor="#ffffff"
-            android:layout_marginLeft="80dp" />
+            android:layout_marginLeft="80dp"
+            android:maxLines="1"/>
     </LinearLayout>
 
 </RelativeLayout>

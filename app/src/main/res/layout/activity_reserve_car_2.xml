@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.divinelimoutah.divinelimousine.LoginActivity"
+    android:background="@drawable/image_one"
+    android:gravity="center_horizontal">
+
+    <!-- Login progress -->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!--design a custom spinner, or just make so something pops up when you click on them.-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:entries="@array/pickUp_dropOff"
+                    android:layout_weight="1"
+                    />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner2"
+                    android:layout_weight="1"
+                    android:entries="@array/pickUp_dropOff"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ADDRESS"
+                android:id="@+id/addressTextView"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:singleLine="true"
+                android:hint="george"
+                android:background="@drawable/white_spacer"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="35dp"
+                android:onClick="addAnotherLocation"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="add another location"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plus_sign"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--make so the button stays at the bottom of the screen even if the scroll view gets to big.-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/continueButton"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blue_button"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:onClick="createAccount"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:text="CONTINUE"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</LinearLayout>

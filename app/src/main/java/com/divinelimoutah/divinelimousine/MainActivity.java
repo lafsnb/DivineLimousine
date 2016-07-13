@@ -41,16 +41,22 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if(loggedIn )
+        if(loggedIn)
             setContentView(R.layout.activity_main);
         else
             setContentView(R.layout.activity_reservation);
 
-//        TextView tx = (TextView)findViewById(R.id.textView);
+        // Customize font
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "LSANS.TTF");
+        TextView mReserveTextView = (TextView)findViewById(R.id.reserveTextView);
+        TextView mLoginTextView = (TextView)findViewById(R.id.loginTextView);
+        TextView mCreateAccountTextView = (TextView)findViewById(R.id.createAccountTextView);
 
-//        tx.setTypeface(custom_font);
+        Typeface customFont = Typeface.createFromAsset(getAssets(),  "LSANS.TTF");
+
+        mReserveTextView.setTypeface(customFont);
+        mLoginTextView.setTypeface(customFont);
+        mCreateAccountTextView.setTypeface(customFont);
 
 //        AssetManager am = context.getApplicationContext().getAssets();
 //
@@ -58,6 +64,11 @@ public class MainActivity extends ActionBarActivity {
 //                String.format(Locale.US, "fonts/%s", "abc.ttf"));
 //
 //        setTypeface(typeface);
+
+
+
+
+
         getActionBar().hide(); // this hides the action bar in the main activity
         //caveat: this will not work if the api is higher than 19
     }
