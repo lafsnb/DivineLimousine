@@ -1,6 +1,7 @@
 package com.divinelimoutah.divinelimousine;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -10,6 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -25,6 +27,11 @@ public class ReserveCarActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserve_car);
+
+//        EditText editText = (EditText) findViewById(R.id.reservationName);
+//
+//        editText.setTextIsSelectable(true);
+
 //        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "LSANS.TTF");
 //        TextView dateTextView = (TextView) findViewById(R.id.dateLbl);
 //        reservationStartTextView = (TextView) findViewById(R.id.reservationStart);
@@ -36,6 +43,12 @@ public class ReserveCarActivity extends ActionBarActivity {
 //        timePicker = (TimePicker) findViewById(R.id.timePicker);
 
     }
+
+    public void nextFragment(View v) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
 
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();

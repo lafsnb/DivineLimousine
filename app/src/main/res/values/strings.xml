@@ -35,4 +35,27 @@
     <string name="title_activity_fleet">Fleet</string>
     <string name="title_activity_create_account">CreateAccount</string>
     <string name="title_activity_login_activityer">Sign in</string>
+    <string name="address">ADDRESS</string>
+    <string name="click">click here</string>
+    <string name="anotherLocation">add another location</string>
+    <string name="continu">CONTINUE</string>
+    <string name="primaryContact">PRIMARY CONTACT</string>
+    <string name="reservationName">RESERVATION NAME</string>
+    <string name="secondaryContact">SECONDARY CONTACT</string>
+    <string name="prefer">DO YOU PREFER:</string>
+    <string name="call">CALL</string>
+    <string name="text">TEXT</string>
+    <string name="userOrPhone">USERNAME OR PHONE NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirmPass">CONFIRM PASSWORD</string>
+    <string name="createAccount">Create Account</string>
+    <string name="login">Login</string>
+    <string name="pastRuns">View Past Runs</string>
+    <string name="group1to10">1-10</string>
+    <string name="groupSize">GROUP SIZE</string>
+    <string name="group11to14">11-14</string>
+    <string name="group14to20">14-20</string>
+    <string name="group20plus">20+</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
 </resources>

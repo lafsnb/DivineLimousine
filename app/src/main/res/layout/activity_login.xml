@@ -31,14 +31,14 @@
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="USERNAME OR PHONE NUMBER"
+                android:text="@string/userOrPhone"
                 android:id="@+id/textView5"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
                 android:singleLine="true"
-                android:hint="george"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="PASSWORD"
+                android:text="@string/password"
                 android:id="@+id/textView6"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#FFFFFF"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/password"
                 android:singleLine="true"
-                android:hint="george"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -112,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
                     android:layout_centerInParent="true"
-                    android:text="Login"
+                    android:text="@string/login"
                     android:textColor="#ffffff" />
             </RelativeLayout>
         </LinearLayout>

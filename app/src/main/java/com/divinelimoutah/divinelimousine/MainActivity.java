@@ -18,6 +18,7 @@ import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -98,6 +99,21 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void login(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void createAccount(View view){
+        Intent intent = new Intent(this, CreateAccount.class);
+        startActivity(intent);
+    }
+
+    public void viewFleet(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void calendar(View view){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }

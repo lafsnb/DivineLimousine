@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/editText1"
             android:singleLine="true"
-            android:hint="george"
+            android:hint="@string/click"
             android:background="@drawable/white_spacer"
             android:selectAllOnFocus="true"
             android:gravity="center"

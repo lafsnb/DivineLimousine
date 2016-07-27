@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="GROUP SIZE"
+        android:text="@string/groupSize"
         android:id="@+id/textView7"
         android:textSize="25sp"
         android:layout_gravity="center_horizontal"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:textSize="26sp"
             android:layout_centerInParent="true"
-            android:text="1-10"
+            android:text="@string/group1to10"
             android:textColor="#ffffff" />
     </RelativeLayout>
 
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:textSize="26sp"
             android:layout_centerInParent="true"
-            android:text="11-14"
+            android:text="@string/group11to14"
             android:textColor="#ffffff" />
     </RelativeLayout>
 
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:textSize="26sp"
             android:layout_centerInParent="true"
-            android:text="14-20"
+            android:text="@string/group14to20"
             android:textColor="#ffffff" />
     </RelativeLayout>
 
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:textSize="26sp"
             android:layout_centerInParent="true"
-            android:text="20+"
+            android:text="@string/group20plus"
             android:textColor="#ffffff" />
     </RelativeLayout>
 

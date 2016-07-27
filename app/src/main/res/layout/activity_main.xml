@@ -24,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_above="@+id/linearLayout"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/relativeLayout"
+        android:onClick="reserve">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -35,8 +36,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/blue_button"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:onClick="createAccount"/>
+            android:layout_marginRight="15dp" />
 
         <TextView
             android:id="@+id/reserveTextView"
@@ -186,7 +186,8 @@
             android:id="@+id/createAccountTextView"
             android:textColor="#ffffff"
             android:layout_marginLeft="80dp"
-            android:maxLines="1"/>
+            android:maxLines="1"
+            android:onClick="createAccount"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -20,15 +20,15 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="RESERVATION NAME"
-                android:id="@+id/textView5"
+                android:text="@string/reservationName"
+                android:id="@+id/reservationNameTextView"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffffff"
                 android:layout_marginBottom="12dp"
@@ -71,7 +71,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/reservationName"
                 android:singleLine="true"
-                android:hint="george"
+                android:inputType="textCapWords|textPersonName"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -79,14 +80,15 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="PRIMARY CONTACT"
-                android:id="@+id/textView6"
+                android:text="@string/primaryContact"
+                android:id="@+id/primaryContactTextView"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="17dp"
@@ -99,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/primaryContact"
                 android:singleLine="true"
-                android:hint="pumpkin"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -107,15 +109,16 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:inputType="number" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="SECONDARY CONTACT"
-                android:id="@+id/textVie"
+                android:text="@string/secondaryContact"
+                android:id="@+id/secondaryContactTextView"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="17dp"
@@ -126,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/secondaryContact"
                 android:singleLine="true"
-                android:hint="george"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -134,21 +137,23 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:inputType="number" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:id="@+id/callOrText">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="DO YOU PREFER: "
-                    android:id="@+id/prefer"
+                    android:text="@string/prefer"
+                    android:id="@+id/preferTextView"
                     android:textColor="#FFFFFF"
                     android:layout_marginTop="3dp"/>
 
@@ -160,18 +165,18 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CALL"
+                        android:text="@string/call"
                         android:id="@+id/callRadioButton"
                         android:textColor="#FFFFFF"
-                        android:layout_marginLeft="15dp" />
+                        android:layout_marginLeft="@dimen/radioButtonMarginLeft" />
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TEXT"
+                        android:text="@string/text"
                         android:id="@+id/textRadioButton"
                         android:textColor="#FFFFFF"
-                        android:layout_marginLeft="15dp" />
+                        android:layout_marginLeft="@dimen/radioButtonMarginLeft" />
 
                 </RadioGroup>
 
@@ -193,7 +198,7 @@
                     android:src="@drawable/blue_button"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="50dp"
-                    android:onClick="createAccount"/>
+                    android:onClick="nextFragment"/>
 
                 <TextView
                     android:id="@+id/textView8"
@@ -201,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
                     android:layout_centerInParent="true"
-                    android:text="CONTINUE"
+                    android:text="@string/continu"
                     android:textColor="#ffffff" />
             </RelativeLayout>
         </LinearLayout>

@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <!--design a custom spinner, or just make so something pops up when you click on them.-->
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="ADDRESS"
+                android:text="@string/address"
                 android:id="@+id/addressTextView"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#FFFFFF"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/address"
                 android:singleLine="true"
-                android:hint="george"
+                android:hint="@string/click"
                 android:background="@drawable/white_spacer"
                 android:selectAllOnFocus="true"
                 android:gravity="center"
@@ -86,7 +86,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="add another location"
+                    android:text="@string/anotherLocation"
                     android:textColor="#ffffff"
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:layout_centerInParent="true"
-            android:text="CONTINUE"
+            android:text="@string/continu"
             android:textColor="#ffffff" />
     </RelativeLayout>
 </LinearLayout>
