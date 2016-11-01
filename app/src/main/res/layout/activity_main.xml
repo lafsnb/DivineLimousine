@@ -6,18 +6,81 @@
     android:background="@drawable/image_one">
 
 
+
+
+    <!--The Divine Limousine Logo-->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/divineLogo"
         android:src="@drawable/divinelimousine_text"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="150dp"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/linearLayout"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginRight="20dp"
+        />
+
+    <!--These need to be spaced further down-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="84dp"-->
+        <!--android:id="@+id/reservationLayout"-->
+        <!--android:onClick="reserve">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:src="@drawable/black_partition"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:id="@+id/reservationBtn"-->
+            <!--android:background="@null"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/reservationTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="26sp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="MY RESERVATIONS"-->
+            <!--android:textColor="#ffffff" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:id="@+id/preferencesLayout"-->
+        <!--android:onClick="reserve">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:src="@drawable/black_partition"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:id="@+id/preferencesBtn"-->
+            <!--android:background="@null"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/preferencesTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="26sp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="PREFERENCES"-->
+            <!--android:textColor="#ffffff" />-->
+    <!--</RelativeLayout>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -44,7 +107,7 @@
             android:layout_height="wrap_content"
             android:textSize="26sp"
             android:layout_centerInParent="true"
-            android:text="RESERVE A LIMOUSINE"
+            android:text="@string/reserveLimo"
             android:textColor="#ffffff" />
     </RelativeLayout>
 
@@ -54,34 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:weightSum="2"
+        android:baselineAligned="false"
         android:layout_centerHorizontal="true"
         android:id="@+id/linearLayout"
         android:gravity="bottom">
-
-        <!--<ImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="52dp"-->
-            <!--android:id="@+id/viewFleet"-->
-            <!--android:layout_weight="1"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:src="@drawable/viewfleetbutton"-->
-            <!--android:layout_gravity="center_vertical"-->
-            <!--android:layout_marginLeft="15dp"-->
-            <!--android:layout_marginRight="15dp"-->
-            <!--android:baselineAlignBottom="false" />-->
-
-        <!--<ImageView-->
-            <!--android:layout_width="310dp"-->
-            <!--android:layout_height="52dp"-->
-            <!--android:id="@+id/calendar"-->
-            <!--android:layout_weight="1"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:onClick="preferences"-->
-            <!--android:src="@drawable/calendar_button"-->
-            <!--android:layout_marginLeft="15dp"-->
-            <!--android:layout_marginRight="15dp" />-->
 
         <LinearLayout
             android:orientation="horizontal"
@@ -106,7 +145,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="View Fleet"
+                android:text="@string/viewFleet"
                 android:textSize="17sp"
                 android:layout_gravity="center"
                 android:maxLines="1"
@@ -123,7 +162,7 @@
             android:layout_height="match_parent"
             android:onClick="calendar"
             android:layout_weight="1"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp">
 
@@ -132,14 +171,15 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/calendar"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+                android:scaleType="fitEnd"
                 android:layout_gravity="center"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:layout_marginRight="5dp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Calendar"
+                android:text="@string/calendar"
                 android:textSize="17sp"
                 android:layout_gravity="center"
                 android:id="@+id/calendarTextView"
@@ -157,14 +197,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:weightSum="2"
+        android:id="@+id/topLayout"
         android:background="#000000">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="LOGIN"
-            android:textSize="20sp"
+            android:text="@string/login"
+            android:textSize="25sp"
             android:layout_weight="1"
             android:layout_marginLeft="20dp"
             android:id="@+id/loginTextView"
@@ -177,9 +218,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="CREATE ACCOUNT"
+            android:text="@string/createAccount"
             android:layout_weight="1"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textAlignment="gravity"
             android:gravity="right"
             android:layout_marginRight="20dp"
@@ -188,6 +229,49 @@
             android:layout_marginLeft="80dp"
             android:maxLines="1"
             android:onClick="createAccount"/>
+    </LinearLayout>
+
+
+    <!--Needs Fixing-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="5dp">
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/preferencesLayout"
+            android:onClick="reserve">
+
+                <ImageButton
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/black_partition"
+                android:id="@+id/preferencesBtn"
+                android:background="@null"/>
+
+                <TextView
+                android:id="@+id/preferencesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:text="VIEW CURRENT RESERVATIONS"
+                android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$556"
+            android:textSize="35sp"
+            android:textColor="#ffffff"/>
+
     </LinearLayout>
 
 </RelativeLayout>

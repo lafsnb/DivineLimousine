@@ -58,4 +58,7 @@
     <string name="group20plus">20+</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
+    <string name="reserveLimo">RESERVE YOUR LIMOUSINE</string>
+    <string name="viewFleet">View Fleet</string>
+    <string name="calendar">Calendar</string>
 </resources>

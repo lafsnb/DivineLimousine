@@ -26,26 +26,67 @@
             <!--design a custom spinner, or just make so something pops up when you click on them.-->
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/linearLayout"
+                android:gravity="bottom">
 
-                <Spinner
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner"
-                    android:entries="@array/pickUp_dropOff"
-                    android:layout_weight="1"
-                    />
+                    android:gravity="center_horizontal"
+                    android:onClick="addPickUp">
 
-                <Spinner
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/imageButton"
+                        android:src="@drawable/down_arrow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Pick Up"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner2"
-                    android:layout_weight="1"
-                    android:entries="@array/pickUp_dropOff"/>
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="50dp"
+                    android:onClick="pickTime">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="00:00 AM"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/teView" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/imageBton"
+                        android:src="@drawable/down_arrow"/>
+
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
